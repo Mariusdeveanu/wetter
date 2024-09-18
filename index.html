@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetter App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Setzt die Schriftart für die Webseite */
+            display: flex; /* Macht den Body zu einem flexiblen Container */
+            flex-direction: column; /* Ordnet die Kinder-Elemente vertikal an */
+            align-items: center; /* Zentriert die Kinder-Elemente horizontal */
+            margin-top: 50px; /* Fügt oben einen Abstand von 50 Pixeln hinzu */
+            background-image: url('./35341.jpg'); /* Pfad zu deinem Hintergrundbild */
+            background-size: cover; /* Skaliert das Hintergrundbild, um den gesamten Bildschirm zu bedecken */
+            background-position: center; /* Zentriert das Hintergrundbild */
+            height: 100vh; /* Setzt die Höhe des Body auf die volle Höhe des Ansichtsfensters */
+        }
+        .weather-info {
+            margin-top: 20px; /* Fügt oben einen Abstand von 20 Pixeln hinzu */
+            background-color: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
+            padding: 20px; /* Innenabstand um den Inhalt */
+            border-radius: 10px; /* Runde Ecken */
+        }
+    </style>
+</head>
+<body>
+    <h1>Wetter App</h1> <!-- Überschrift der Webseite -->
+    <input type="text" id="city" placeholder="Stadt" required> <!-- Eingabefeld für die Stadt -->
+    <button onclick="getWeather()">Wetter abfragen</button> <!-- Button zum Abfragen des Wetters -->
+    <div class="weather-info" id="weatherInfo"></div> <!-- Div zum Anzeigen der Wetterinformationen -->
+
+    <script src="app.js"></script> <!-- Einbindung der JavaScript-Datei -->
+</body>
+</html>
